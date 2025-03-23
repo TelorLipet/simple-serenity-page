@@ -1,6 +1,6 @@
 
 import { cn } from "@/lib/utils";
-import { Coffee, Heart, Instagram, Twitter, Facebook } from "lucide-react";
+import { Heart, Instagram, Twitter, Facebook, TreePine } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h3 className="font-display font-semibold text-lg mb-4">kawaii kava</h3>
+            <h3 className="font-display font-semibold text-lg mb-4">prickly pals</h3>
             <p className="text-sm text-gray-700 mb-4 max-w-xs">
-              Experience the perfect blend of cuteness and caffeine with our specially crafted kawaii coffee experience.
+              Bringing nature indoors with our carefully cultivated collection of beautiful, low-maintenance cacti and succulents.
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="transition-transform hover:scale-110">
@@ -28,10 +28,10 @@ const Footer = () => {
           <div>
             <h3 className="font-display font-semibold text-lg mb-4">Links</h3>
             <nav className="flex flex-col gap-2">
-              {['Home', 'Products', 'About', 'Contact'].map((item) => (
+              {['Home', 'Products', 'About', 'Care Guide'].map((item) => (
                 <a 
                   key={item} 
-                  href={`#${item.toLowerCase()}`}
+                  href={`#${item.toLowerCase().replace(' ', '-')}`}
                   className="text-sm text-gray-700 hover:text-black transition-colors"
                 >
                   {item}
@@ -41,24 +41,24 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-display font-semibold text-lg mb-4">Visit Us</h3>
+            <h3 className="font-display font-semibold text-lg mb-4">Visit Our Greenhouse</h3>
             <address className="text-sm text-gray-700 not-italic">
-              123 Kawaii Street<br />
-              Cute District<br />
-              Tokyo, Japan
+              456 Desert Lane<br />
+              Cactus Grove<br />
+              Tucson, Arizona
             </address>
             <p className="text-sm text-gray-700 mt-4">
-              Open every day: 9am - 8pm
+              Open every day: 10am - 6pm
             </p>
           </div>
         </div>
         
         <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-gray-500">
-            © 2023 Kawaii Coffee. All rights reserved.
+            © 2023 Prickly Pals. All rights reserved.
           </p>
           <p className="text-xs text-gray-500 flex items-center gap-1 mt-4 md:mt-0">
-            Made with <Heart className="w-3 h-3 text-red-400" /> and <Coffee className="w-3 h-3" />
+            Made with <Heart className="w-3 h-3 text-red-400" /> and <TreePine className="w-3 h-3" />
           </p>
         </div>
       </div>

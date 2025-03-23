@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 195 56% 91%;
-    --foreground: 222 47% 11%;
+    --background: 48 33% 94%;
+    --foreground: 35 10% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 35 10% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 35 10% 25%;
 
-    --primary: 195 70% 70%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 142 33% 55%;
+    --primary-foreground: 355 100% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 35 33% 90%;
+    --secondary-foreground: 35 10% 25%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 35 33% 90%;
+    --muted-foreground: 35 10% 45%;
 
-    --accent: 195 70% 70%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 142 33% 55%;
+    --accent-foreground: 35 10% 25%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 355 100% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 222 84% 70%;
+    --border: 35 33% 85%;
+    --input: 35 33% 85%;
+    --ring: 142 33% 55%;
 
     --radius: 1rem;
   }
@@ -59,15 +59,15 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-kawaii-darkBlue/30 rounded-full;
+    @apply bg-kawaii-darkGreen/30 rounded-full;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-kawaii-darkBlue/50;
+    @apply bg-kawaii-darkGreen/50;
   }
 }
 
-.cloud-bg {
+.desert-bg {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -76,10 +76,11 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+  background-color: #F8F3E2;
   background-image: url('/lovable-uploads/3933bf12-b824-4c64-90ed-611a955a9c38.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.4;
+  opacity: 0.3;
   filter: blur(1px);
 }
 

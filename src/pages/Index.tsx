@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
-import { ChevronDown, Coffee, Gift, Clock } from "lucide-react";
+import { ChevronDown, TreePine, Droplets, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Index = () => {
@@ -15,19 +15,19 @@ const Index = () => {
 
   const features = [
     {
-      icon: <Coffee className="w-6 h-6" />,
-      title: "Premium Quality",
-      description: "Sourced from the finest beans, our coffee offers an unparalleled smooth taste."
+      icon: <TreePine className="w-6 h-6" />,
+      title: "Sustainable",
+      description: "All our cacti and succulents are ethically sourced and grown with eco-friendly practices."
     },
     {
-      icon: <Gift className="w-6 h-6" />,
-      title: "Special Experience",
-      description: "Every cup is served with a touch of kawaii delight to brighten your day."
+      icon: <Droplets className="w-6 h-6" />,
+      title: "Low Maintenance",
+      description: "Perfect for busy lifestyles or beginners - our plants require minimal care and attention."
     },
     {
-      icon: <Clock className="w-6 h-6" />,
-      title: "Perfect Timing",
-      description: "Expertly brewed for the optimal flavor profile, just as you deserve."
+      icon: <Sun className="w-6 h-6" />,
+      title: "Air Purifying",
+      description: "Bring the benefits of nature indoors with plants that improve your air quality and wellbeing."
     }
   ];
 
@@ -57,7 +57,7 @@ const Index = () => {
               loaded && "animate-slide-up"
             )}
             style={{ animationDelay: '100ms' }}>
-              The Kawaii Difference
+              The Prickly Difference
             </h2>
           </div>
           
@@ -71,7 +71,7 @@ const Index = () => {
                 )}
                 style={{ animationDelay: `${(index + 1) * 200}ms` }}
               >
-                <div className="bg-kawaii-blue/20 p-3 rounded-full w-fit mb-4">
+                <div className="bg-kawaii-lightGreen/20 p-3 rounded-full w-fit mb-4">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-display font-semibold mb-3">{feature.title}</h3>
@@ -90,15 +90,15 @@ const Index = () => {
               Our Selection
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold">
-              Kawaii Creations
+              Desert Beauties
             </h2>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Cat Cappuccino", price: "$4.50", color: "bg-kawaii-yellow/20" },
-              { name: "Bunny Latte", price: "$5.25", color: "bg-kawaii-pink/20" },
-              { name: "Panda Mocha", price: "$4.75", color: "bg-kawaii-purple/20" },
+              { name: "Prickly Pear", price: "$12.50", color: "bg-kawaii-lightGreen/20" },
+              { name: "Aloe Vera", price: "$15.25", color: "bg-kawaii-green/20" },
+              { name: "Barrel Cactus", price: "$18.75", color: "bg-kawaii-sand/20" },
             ].map((product, index) => (
               <div 
                 key={index}
@@ -122,8 +122,8 @@ const Index = () => {
           </div>
           
           <div className="mt-12 text-center">
-            <button className="bg-black text-white px-8 py-3 rounded-full font-medium transition-transform hover:scale-105">
-              View All Products
+            <button className="bg-kawaii-darkGreen text-white px-8 py-3 rounded-full font-medium transition-transform hover:scale-105">
+              View All Plants
             </button>
           </div>
         </div>
@@ -133,9 +133,9 @@ const Index = () => {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto glassmorphism rounded-3xl p-10 md:p-16">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-display font-bold mb-3">Join Our Kawaii Club</h2>
+            <h2 className="text-2xl md:text-3xl font-display font-bold mb-3">Join Our Plant Club</h2>
             <p className="text-gray-700 max-w-md mx-auto">
-              Subscribe to our newsletter for special offers, new product updates, and all things kawaii!
+              Subscribe to our newsletter for care tips, new plant alerts, and exclusive offers on our cacti collection!
             </p>
           </div>
           
@@ -143,12 +143,12 @@ const Index = () => {
             <input 
               type="email" 
               placeholder="Your email address" 
-              className="flex-1 px-5 py-3 rounded-full bg-white/50 backdrop-blur-sm border border-white/30 focus:outline-none focus:ring-2 focus:ring-kawaii-blue/50"
+              className="flex-1 px-5 py-3 rounded-full bg-white/50 backdrop-blur-sm border border-white/30 focus:outline-none focus:ring-2 focus:ring-kawaii-green/50"
               required
             />
             <button 
               type="submit" 
-              className="bg-black text-white px-6 py-3 rounded-full font-medium transition-transform hover:scale-105"
+              className="bg-kawaii-darkGreen text-white px-6 py-3 rounded-full font-medium transition-transform hover:scale-105"
             >
               Subscribe
             </button>

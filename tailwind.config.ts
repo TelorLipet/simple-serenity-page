@@ -64,11 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				kawaii: {
-					blue: '#9DD5F0',
-					darkBlue: '#6AA5C5',
-					pink: '#FFD9E4',
-					yellow: '#FFF6A9',
-					purple: '#CFBEFF',
+					green: '#81B29A',
+					darkGreen: '#3D5A5B',
+					lightGreen: '#C8DDBB',
+					sand: '#F2CC8F',
+					terracotta: '#E07A5F',
 				}
 			},
 			borderRadius: {
@@ -138,7 +138,7 @@ export default {
 				'bubble': '0 6px 16px rgba(0, 0, 0, 0.06)',
 			},
 			backgroundImage: {
-				'cloud-pattern': "url('/cloud-bg.png')",
+				'desert-pattern': "url('/desert-bg.png')",
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			}
 		}

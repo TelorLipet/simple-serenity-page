@@ -23,17 +23,17 @@ const TagBubble = ({
 
   // Randomize background slightly within the tag's base color
   const backgrounds = {
-    "Super!": "bg-kawaii-pink/80",
-    "Unreal": "bg-white/80",
-    "Perfect!": "bg-kawaii-purple/80",
-    "Fantastic": "bg-kawaii-pink/80",
-    "Amazing!": "bg-kawaii-blue/80",
-    "Awesome!": "bg-kawaii-pink/80",
-    "Whoa": "bg-kawaii-yellow/80",
-    "(・ω・)": "bg-kawaii-blue/80",
-    "(⌒▽⌒)": "bg-kawaii-yellow/80",
-    "(^・^)": "bg-kawaii-purple/80",
-    "(*･ω･)": "bg-kawaii-yellow/80",
+    "Succulent": "bg-kawaii-green/80",
+    "Sustainable": "bg-white/80",
+    "Eco-friendly!": "bg-kawaii-lightGreen/80",
+    "Low-maintenance": "bg-kawaii-green/80",
+    "Beautiful": "bg-kawaii-sand/80",
+    "Natural!": "bg-kawaii-green/80",
+    "Unique": "bg-kawaii-sand/80",
+    "(・ω・)": "bg-kawaii-lightGreen/80",
+    "(⌒▽⌒)": "bg-kawaii-sand/80",
+    "(^・^)": "bg-kawaii-darkGreen/80",
+    "(*･ω･)": "bg-kawaii-sand/80",
   };
 
   const bgColor = backgrounds[text as keyof typeof backgrounds] || "bg-white/80";

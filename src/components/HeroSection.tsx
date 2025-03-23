@@ -20,22 +20,22 @@ const HeroSection = () => {
 
   // Define positions of tag bubbles
   const tagPositions: TagPosition[] = [
-    { text: "Unreal", top: "12%", left: "15%", animationVariant: "default", delay: 300 },
-    { text: "Super!", top: "35%", left: "10%", animationVariant: "slow", delay: 400 },
+    { text: "Sustainable", top: "12%", left: "15%", animationVariant: "default", delay: 300 },
+    { text: "Succulent", top: "35%", left: "10%", animationVariant: "slow", delay: 400 },
     { text: "(・ω・)", top: "55%", left: "15%", animationVariant: "fast", delay: 500 },
-    { text: "Fantastic", top: "75%", left: "12%", animationVariant: "slow", delay: 600 },
+    { text: "Low-maintenance", top: "75%", left: "12%", animationVariant: "slow", delay: 600 },
     { text: "(*･ω･)", top: "55%", left: "25%", animationVariant: "default", delay: 700 },
-    { text: "Amazing!", top: "20%", left: "80%", animationVariant: "slow", delay: 800 },
+    { text: "Beautiful", top: "20%", left: "80%", animationVariant: "slow", delay: 800 },
     { text: "(^・^)", top: "30%", left: "85%", animationVariant: "default", delay: 300 },
-    { text: "Awesome!", top: "60%", left: "80%", animationVariant: "fast", delay: 400 },
+    { text: "Natural!", top: "60%", left: "80%", animationVariant: "fast", delay: 400 },
     { text: "(⌒▽⌒)", top: "75%", left: "85%", animationVariant: "slow", delay: 500 },
-    { text: "Whoa", top: "85%", left: "55%", animationVariant: "default", delay: 600 },
-    { text: "Perfect!", top: "15%", left: "40%", animationVariant: "fast", delay: 700 },
+    { text: "Unique", top: "85%", left: "55%", animationVariant: "default", delay: 600 },
+    { text: "Eco-friendly!", top: "15%", left: "40%", animationVariant: "fast", delay: 700 },
   ];
 
   return (
     <section className="min-h-screen w-full flex flex-col items-center justify-center relative overflow-hidden pt-20 px-6">
-      <div className="cloud-bg"></div>
+      <div className="desert-bg"></div>
       
       <div className="max-w-6xl mx-auto w-full relative z-10">
         {/* Tags */}
@@ -62,17 +62,17 @@ const HeroSection = () => {
             "inline-block text-sm md:text-base font-medium mb-2 opacity-0",
             loaded && "animate-fade-in"
           )}>
-            IT'S TIME FOR
+            BRING NATURE HOME
           </span>
           
           <h1 className="relative">
             <span className={cn(
-              "text-5xl md:text-7xl lg:text-8xl font-display font-bold text-kawaii-blue block opacity-0",
+              "text-5xl md:text-7xl lg:text-8xl font-display font-bold text-kawaii-darkGreen block opacity-0",
               loaded && "animate-slide-up"
             )} 
             style={{ animationDelay: '200ms' }}
             >
-              Kawaii
+              Prickly
             </span>
             <span className={cn(
               "text-5xl md:text-7xl lg:text-8xl font-display font-bold text-black block opacity-0",
@@ -80,7 +80,7 @@ const HeroSection = () => {
             )}
             style={{ animationDelay: '300ms' }}
             >
-              Coffee
+              Plant
             </span>
             <span className={cn(
               "text-5xl md:text-7xl lg:text-8xl font-display font-bold text-black block opacity-0",
@@ -88,46 +88,40 @@ const HeroSection = () => {
             )}
             style={{ animationDelay: '400ms' }}
             >
-              Experience
+              Collection
             </span>
           </h1>
         </div>
 
-        {/* Center mug image */}
+        {/* Center cactus image */}
         <div className={cn(
           "relative max-w-md mx-auto mt-8 opacity-0 transform scale-95",
           loaded && "animate-fade-in !scale-100"
         )}
         style={{ transitionDuration: '1s', animationDelay: '600ms' }}>
           <div className="w-full aspect-square relative">
-            {/* Cat coffee mug placeholder */}
-            <div className="w-full h-full rounded-full bg-white shadow-xl relative overflow-hidden">
-              {/* Cat ears */}
-              <div className="absolute w-16 h-16 bg-white rounded-full -top-6 -left-4 transform rotate-45"></div>
-              <div className="absolute w-16 h-16 bg-white rounded-full -top-6 -right-4 transform -rotate-45"></div>
+            {/* Cactus pot placeholder */}
+            <div className="w-full h-full relative overflow-hidden">
+              {/* Cactus pot */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60%] h-[35%] rounded-t-none rounded-b-[50%/30%] bg-[#E07A5F] overflow-hidden"></div>
               
-              {/* Coffee in mug */}
-              <div className="absolute top-[15%] left-1/2 -translate-x-1/2 w-[70%] h-[65%] rounded-[50%/60%] bg-[#D4A76A] overflow-hidden">
-                {/* Latte art */}
-                <div className="absolute w-3/4 h-5 bg-[#F3E3CF] top-6 left-1/2 -translate-x-1/2 rounded-full"></div>
-                <div className="absolute w-1/2 h-4 bg-[#F3E3CF] top-12 left-1/2 -translate-x-1/2 rounded-full"></div>
-              </div>
-              
-              {/* Cat face */}
-              <div className="absolute bottom-[15%] left-0 right-0 mx-auto flex flex-col items-center">
-                {/* Eyes and nose */}
-                <div className="flex gap-5 mb-1">
-                  <div className="w-2 h-3 bg-black rounded-full"></div>
-                  <div className="w-2 h-3 bg-black rounded-full"></div>
-                </div>
-                <div className="w-3 h-2 bg-black rounded-full"></div>
+              {/* Cactus body */}
+              <div className="absolute bottom-[30%] left-1/2 -translate-x-1/2 w-[40%] h-[55%] bg-[#81B29A] rounded-lg">
+                {/* Cactus details */}
+                <div className="absolute w-[10%] h-[15%] bg-[#81B29A] top-[20%] -right-[8%] rounded-full"></div>
+                <div className="absolute w-[10%] h-[25%] bg-[#81B29A] top-[40%] -left-[8%] rounded-full"></div>
                 
-                {/* Cheeks */}
-                <div className="flex w-full justify-between px-10 mt-2">
-                  <div className="w-4 h-2 bg-kawaii-pink rounded-full opacity-70"></div>
-                  <div className="w-4 h-2 bg-kawaii-pink rounded-full opacity-70"></div>
-                </div>
+                {/* Cactus spikes */}
+                <div className="absolute w-[2%] h-[5%] bg-white top-[10%] right-[20%] rotate-45"></div>
+                <div className="absolute w-[2%] h-[5%] bg-white top-[20%] right-[30%] rotate-45"></div>
+                <div className="absolute w-[2%] h-[5%] bg-white top-[30%] right-[15%] rotate-45"></div>
+                <div className="absolute w-[2%] h-[5%] bg-white top-[15%] left-[20%] -rotate-45"></div>
+                <div className="absolute w-[2%] h-[5%] bg-white top-[25%] left-[30%] -rotate-45"></div>
+                <div className="absolute w-[2%] h-[5%] bg-white top-[35%] left-[15%] -rotate-45"></div>
               </div>
+              
+              {/* Sand/soil in pot */}
+              <div className="absolute bottom-[5%] left-1/2 -translate-x-1/2 w-[55%] h-[8%] bg-[#F4F1DE] rounded-full"></div>
             </div>
           </div>
         </div>
