@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Search, Coffee, Menu, X } from 'lucide-react';
+import { Search, TreePine, Menu, X } from 'lucide-react';
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
@@ -29,7 +29,7 @@ const Navbar = () => {
           className="flex items-center gap-2 opacity-0 animate-fade-in" 
           style={{ animationDelay: '100ms' }}
         >
-          <span className="font-display font-bold text-lg">kawaii kava</span>
+          <span className="font-display font-bold text-lg">MoroCactus</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-10">
@@ -65,7 +65,7 @@ const Navbar = () => {
             className="opacity-0 animate-fade-in bg-black text-white p-2 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-105"
             style={{ animationDelay: '700ms' }}
           >
-            <Coffee className="w-5 h-5" />
+            <TreePine className="w-5 h-5" />
           </button>
           
           <button 

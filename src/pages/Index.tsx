@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -22,7 +21,7 @@ const Index = () => {
     {
       icon: <Droplets className="w-6 h-6" />,
       title: "Low Maintenance",
-      description: "Perfect for busy lifestyles or beginners - our plants require minimal care and attention."
+      description: "Perfect for busy lifestyles or beginners - our desert plants require minimal water and care."
     },
     {
       icon: <Sun className="w-6 h-6" />,
@@ -57,7 +56,7 @@ const Index = () => {
               loaded && "animate-slide-up"
             )}
             style={{ animationDelay: '100ms' }}>
-              The Prickly Difference
+              The Desert Difference
             </h2>
           </div>
           
@@ -87,18 +86,18 @@ const Index = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <span className="inline-block text-sm uppercase tracking-wider mb-2">
-              Our Selection
+              Our Collection
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold">
-              Desert Beauties
+              Desert Treasures
             </h2>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Prickly Pear", price: "$12.50", color: "bg-kawaii-lightGreen/20" },
-              { name: "Aloe Vera", price: "$15.25", color: "bg-kawaii-green/20" },
-              { name: "Barrel Cactus", price: "$18.75", color: "bg-kawaii-sand/20" },
+              { name: "Mammillaria Cactus", price: "$15.50", color: "bg-kawaii-lightGreen/20" },
+              { name: "Echeveria Succulent", price: "$18.25", color: "bg-kawaii-green/20" },
+              { name: "Golden Barrel Cactus", price: "$22.75", color: "bg-kawaii-sand/20" },
             ].map((product, index) => (
               <div 
                 key={index}
@@ -123,7 +122,7 @@ const Index = () => {
           
           <div className="mt-12 text-center">
             <button className="bg-kawaii-darkGreen text-white px-8 py-3 rounded-full font-medium transition-transform hover:scale-105">
-              View All Plants
+              View All Cacti & Succulents
             </button>
           </div>
         </div>
@@ -133,9 +132,9 @@ const Index = () => {
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto glassmorphism rounded-3xl p-10 md:p-16">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-display font-bold mb-3">Join Our Plant Club</h2>
+            <h2 className="text-2xl md:text-3xl font-display font-bold mb-3">Join Our Desert Club</h2>
             <p className="text-gray-700 max-w-md mx-auto">
-              Subscribe to our newsletter for care tips, new plant alerts, and exclusive offers on our cacti collection!
+              Subscribe to our newsletter for care tips, new plant alerts, and exclusive offers on our cacti and succulent collection!
             </p>
           </div>
           

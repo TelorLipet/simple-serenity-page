@@ -62,7 +62,7 @@ const HeroSection = () => {
             "inline-block text-sm md:text-base font-medium mb-2 opacity-0",
             loaded && "animate-fade-in"
           )}>
-            BRING NATURE HOME
+            DESERT BEAUTY INDOORS
           </span>
           
           <h1 className="relative">
@@ -72,7 +72,7 @@ const HeroSection = () => {
             )} 
             style={{ animationDelay: '200ms' }}
             >
-              Prickly
+              Moro
             </span>
             <span className={cn(
               "text-5xl md:text-7xl lg:text-8xl font-display font-bold text-black block opacity-0",
@@ -80,7 +80,7 @@ const HeroSection = () => {
             )}
             style={{ animationDelay: '300ms' }}
             >
-              Plant
+              Cactus
             </span>
             <span className={cn(
               "text-5xl md:text-7xl lg:text-8xl font-display font-bold text-black block opacity-0",
